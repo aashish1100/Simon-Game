@@ -4,7 +4,8 @@ let btnclasses=['.btn1','.btn2','.btn3','.btn4'];
 let started = false;
 let level=0;
 let h2 = document.querySelector('h2');
-document.addEventListener('keypress',function()
+let startbtn = document.querySelector('button');
+startbtn.addEventListener('click',function()
 {
     if(started==false)
     {
@@ -14,6 +15,7 @@ document.addEventListener('keypress',function()
     }
     
 })
+
 
 function flashbtn(btnclass)
 {
